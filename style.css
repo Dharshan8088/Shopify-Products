@@ -1,0 +1,222 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+
+
+body{
+  font-family: "Inter";
+  
+}
+
+
+.header{
+  width:90vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-left: 5%;
+}
+
+
+.header h1{
+  display: flex;
+  justify-content: center;
+}
+
+
+
+
+.btn-section{
+  width: fit-content;
+  background-color: rgb(210, 210, 210);
+  border-radius: 8px;
+}
+
+.btn-item{
+  font-size: large;
+  background-color: rgb(210, 210, 210);
+  border-radius: 2px;
+  padding: 10px 80px;
+  border:0;
+  margin: 0;
+  text-align: center;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.btn-item:hover{
+  background-color: black;
+  font-weight: 400;
+  color: #fff;
+  border-radius: 5px;
+}
+
+.details{
+  display: flex;
+  height:50vh;
+  width: 60vw;
+  margin-left: 15%;
+  gap: 20px;
+  padding-top: 20px;
+}
+
+
+.prodcontainer-inner{
+  display: flex;
+  transition: box-shadow 0.3s ease-in-out;
+  flex-direction:column;
+  height:100%;
+  width:100%;
+}
+
+.prodcontainer-inner:hover {
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
+
+.card {
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+}
+
+
+
+
+.badge{
+  width: fit-content;
+  margin-top: -85%;
+  margin-left: 3%;
+  color:black;
+  padding:2% 4% 2% 4%;
+  background-color: #ffffff;
+  font-size: 10px;
+  font-weight: 600;
+  border-radius: 4px;
+}
+
+
+.card img {
+  width: 100%;
+  height: 70%;
+  display: block;
+}
+
+.card-content {
+  display: flex;
+  flex-direction: column;
+  font-size: 12px;
+  width:100%;
+  height:100%;
+ 
+}
+
+
+
+.div-inner:nth-child(1) .item:nth-child(1){
+  font-size: 14px;
+  width:100px;
+  text-wrap: nowrap;
+  overflow: hidden;
+  padding-left: 8px;
+  text-overflow: ellipsis;
+}
+
+
+
+
+
+.div-inner{
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.div-inner:nth-child(1){
+  gap: 0;
+}
+
+.div-inner:nth-child(2){
+  margin-bottom: 5px;
+}
+.div-inner:nth-child(1) .item:nth-child(2){
+  padding-right: 28px;
+}
+
+.div-inner:nth-child(2) .item:nth-child(2){
+  color:#ccc;
+  text-decoration: line-through;
+}
+
+.div-inner:nth-child(3) ,.item:nth-child(3){
+  color: red;
+}
+
+.btn-container{
+margin-top: 3px;
+}
+
+.btn-container button{
+  width:100%;
+  color: #fff;
+  background-color: black;
+  font-size: large;
+  font-weight: 500;
+  border-radius: 5px;
+  border: 0;
+  padding:8px 0px;
+  cursor: pointer;
+}
+
+
+
+
+@media only screen and (min-width: 300px) and (max-width: 717px){
+  .header {
+    width: 60vw;
+    margin-left:15%;
+    /* padding-left: 4px; */
+  }
+
+  .header h1 {
+    font-size: medium;
+  }
+
+  .btn-section{
+    font-size: medium;
+    text-align: center;
+  }
+
+  .details{
+    flex-direction: column;
+  }
+
+}
+
+
+@media only screen and (min-width: 727px) and (max-width: 1022px){
+  .details{
+    margin-left:98px;
+    width: 20vw;
+    gap: 40px;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+  }
+
+  .badge{
+    margin-top: -115%;
+  }
+
+    .prodcontainer-inner:nth-child(1) .card .badge{
+      margin-top: -120%;
+    }
+}
+
+@media only screen and (min-width:1440px){
+  .container{
+    display: flex;
+    align-items: center;
+  }
+}
